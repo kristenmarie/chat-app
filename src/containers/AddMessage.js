@@ -26,3 +26,5 @@ AddMessage.PropTypes = {
 	dispatch: PropTypes.func.isRequired
 }
 
+export default AddMessage
+
