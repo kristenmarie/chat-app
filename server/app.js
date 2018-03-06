@@ -20,6 +20,7 @@ wss.on('connection', (ws) => {
     // Parse message into the data variable
     const data = JSON.parse(message)
     // Depending on what the data actually is, we're going to do something different
+    // When user connects, listen to add user and add message events, establishes connection to server
     switch(data.type) {
       case 'ADD-USER': {
         index = users.length
@@ -55,6 +56,7 @@ wss.on('connection', (ws) => {
     // removing the current user from the user list
     users.splice(index, 1)
     broadcast({
+      // Use string instead of constants because server can't read anything from the constants folder because the client and the server are completely separated
       type: 'USERS_LIST',
       users
     }, ws)
