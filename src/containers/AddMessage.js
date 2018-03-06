@@ -3,9 +3,9 @@ import AddMessageComponent from '../components/AddMessage'
 import { addMessage } from '../actions'
 
 const mapDispatchToProps = dispatch => ({
-  dispatch : (message, author) => {
-    dispatch(addMessage(message,author))
+  dispatch: (message, author) => {
+    dispatch(addMessage(message, author))
   }
 })
-// Connect to the add message component.
+
 export const AddMessage = connect(() => ({}), mapDispatchToProps)(AddMessageComponent)

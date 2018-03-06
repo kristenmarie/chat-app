@@ -27,4 +27,3 @@ AddMessage.PropTypes = {
 }
 
 export default AddMessage
-

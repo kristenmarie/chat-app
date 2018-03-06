@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Message = ({message, author}) => (
-	<p>
+	<p> 
 		<i>{author}</i>: {message}
 	</p>
-)
+	)
 
 Message.PropTypes = {
 	message: PropTypes.string.isRequired,
@@ -13,4 +13,3 @@ Message.PropTypes = {
 }
 
 export default Message
-
