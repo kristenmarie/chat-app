@@ -8,10 +8,9 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers'
-import { addUser } from './actions'
-import { setupSocket } from './sockets'
+import setupSocket from './sockets'
 import handleNewMessage from './sagas'
-import username from '.utils/name'
+import username from './utils/name'
 
 const sagaMiddleware = createSagaMiddleware()
 
